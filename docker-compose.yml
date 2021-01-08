@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  python:
+    restart: always
+    container_name: 'python'
+    working_dir: '/root/'
+    image: reichtangle/python
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/root
+    ports:
+      - 80:80
+    tty: true
