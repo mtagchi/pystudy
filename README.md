@@ -14,7 +14,7 @@ docker-compose exec python bash
 
 start
 ```
-apachectl start
+apachectl -D foreground
 ```
 
 stop
